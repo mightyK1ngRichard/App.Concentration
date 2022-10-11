@@ -13,6 +13,8 @@
 		2C24703528F463440016E885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C24703328F463440016E885 /* Main.storyboard */; };
 		2C24703728F463450016E885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C24703628F463450016E885 /* Assets.xcassets */; };
 		2C24703A28F463450016E885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C24703828F463450016E885 /* LaunchScreen.storyboard */; };
+		2C984C7928F55DEC004A30A2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C984C7828F55DEC004A30A2 /* Card.swift */; };
+		2C984C7B28F55EC1004A30A2 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C984C7A28F55EC1004A30A2 /* Concentration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2C24703628F463450016E885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C24703928F463450016E885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C24703B28F463450016E885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C984C7828F55DEC004A30A2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2C984C7A28F55EC1004A30A2 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		2C24702128F463440016E885 = {
 			isa = PBXGroup;
 			children = (
+				2C984C7828F55DEC004A30A2 /* Card.swift */,
+				2C984C7A28F55EC1004A30A2 /* Concentration.swift */,
 				2C24702C28F463440016E885 /* concentraion */,
 				2C24702B28F463440016E885 /* Products */,
 			);
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C24703228F463440016E885 /* ViewController.swift in Sources */,
+				2C984C7B28F55EC1004A30A2 /* Concentration.swift in Sources */,
 				2C24702E28F463440016E885 /* AppDelegate.swift in Sources */,
 				2C24703028F463440016E885 /* SceneDelegate.swift in Sources */,
+				2C984C7928F55DEC004A30A2 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

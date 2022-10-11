@@ -74,18 +74,6 @@
                                     <action selector="buttonActiom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGU-JG-P1E"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJj-WB-Vge">
-                                <rect key="frame" x="254" y="206" width="102" height="101"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.067948474290000005" green="0.022439922599999999" blue="0.3325346327" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="39"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonActiom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="apA-UZ-uHq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQI-3o-nqD">
                                 <rect key="frame" x="34" y="315" width="102" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -141,6 +129,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJj-WB-Vge">
+                                <rect key="frame" x="254" y="206" width="102" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.067948474290000005" green="0.022439922599999999" blue="0.3325346327" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="39"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonActiom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="apA-UZ-uHq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -161,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="272.30769230769232" y="-18.48341232227488"/>
+            <point key="canvasLocation" x="-215" y="-82"/>
         </scene>
     </scenes>
     <resources>
