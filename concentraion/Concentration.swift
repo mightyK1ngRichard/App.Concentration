@@ -21,13 +21,13 @@ class ConcebtraionGame {
                 }
                 cards[index].isFaceup = true
                 indexOfOneAndOnlyFaceUpCard = nil
+            } else {
+                for flipDown in cards.indices {
+                    cards[flipDown].isFaceup = false
+                }
+                cards[index].isFaceup = true
+                indexOfOneAndOnlyFaceUpCard = index
             }
-        } else {
-            for flipDown in cards.indices {
-                cards[flipDown].isFaceup = false
-            }
-            cards[index].isFaceup = true
-            indexOfOneAndOnlyFaceUpCard = index
         }
     }
     

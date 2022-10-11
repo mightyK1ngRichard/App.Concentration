@@ -29,15 +29,10 @@ class ViewController: UIViewController {
         }
     }
     
-    var emodjiCollection = ["💻", "📱", "☎️", "", "Dmitriy"]
+    var emodjiCollection = ["💻", "📱", "☎️", "", "Dmitriy", "🥶"]
     var emojiDictiionary = [Int:String]()
     
     func emojiIndetifier(for card: Card) -> String {
-//        if emojiDictiionary[card.indefier] != nil {
-//            return emojiDictiionary[card.indefier]!
-//        } else {
-//            return "?"
-//        }
         if emojiDictiionary[card.indefier] == nil {
             let randomIndex = Int(arc4random_uniform(UInt32(emodjiCollection.count)))
             emojiDictiionary[card.indefier] = emodjiCollection.remove(at: randomIndex)
@@ -55,7 +50,7 @@ class ViewController: UIViewController {
                 button.backgroundColor = .white
             } else {
                 button.setTitle("", for: .normal)
-                button.backgroundColor = card.isMatched ? #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0) : #colorLiteral(red: 0.3098039329, green: 0.01568627544, blue: 0.1294117719, alpha: 1)
+                button.backgroundColor = card.isMatched ? #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0) : #colorLiteral(red: 0.07563180476, green: 0.02028302476, blue: 0.3475425243, alpha: 1)
             }
         }
     }
