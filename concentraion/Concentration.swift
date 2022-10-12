@@ -9,8 +9,26 @@ import Foundation
 
 class ConcebtraionGame {
     var cards = [Card]()
-    var indexOfOneAndOnlyFaceUpCard: Int?
-    
+    var indexOfOneAndOnlyFaceUpCard: Int? {
+        get {
+            var foundIndex: Int?
+            for index in cards.indices {
+                if cards[index].isFaceup {
+                    if foundIndex == nil{
+                        foundIndex = index
+                    } else {
+                        return nil
+                    }
+                }
+            }
+            return foundIndex
+        }
+        set {
+            for index in cards.indices {
+                cards[index].isFaceup = (index == newValue)
+            }
+        }
+    }
     
     func chooseCard(at index: Int) {
         if !cards[index].isMatched {
@@ -20,12 +38,7 @@ class ConcebtraionGame {
                     cards[index].isMatched = true
                 }
                 cards[index].isFaceup = true
-                indexOfOneAndOnlyFaceUpCard = nil
             } else {
-                for flipDown in cards.indices {
-                    cards[flipDown].isFaceup = false
-                }
-                cards[index].isFaceup = true
                 indexOfOneAndOnlyFaceUpCard = index
             }
         }
@@ -36,9 +49,6 @@ class ConcebtraionGame {
             let card = Card()
             cards += [card, card]
         }
-        
-    
-        
     }
     
     
